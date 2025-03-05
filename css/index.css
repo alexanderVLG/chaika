@@ -1187,13 +1187,13 @@ gap:14px;}
   z-index: 10;
   padding-top: 30px;
   padding-bottom: 180px;
-  background: url("/img/main/hero-background.jpg") center center no-repeat;
+  background: url("../img/main/hero-background.jpg") center center no-repeat;
   background-size: cover;
   /* FROM 320 TO 767 */
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main {
-    background: url("/img/main/hero-background.jpg") left center no-repeat;
+    background: url("../img/main/hero-background.jpg") left center no-repeat;
     padding-bottom: 60px;
     background-size: cover;
     padding-top: 15px;
