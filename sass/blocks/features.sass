@@ -1,0 +1,37 @@
+.features
+  position: relative
+  &__title
+    max-width: 760px
+    margin: 0 auto 60px auto
+    /* FROM 320 TO 767 */
+    @media (min-width: $xs-sm) and (max-width: $xs-max)
+      margin-bottom: 35px
+  &__img
+    position: absolute
+    top: -250px
+    left: -0px
+    max-height: 700px
+    z-index: 1
+    /* FROM 320 TO 1279 */
+    @media (min-width: $xs-sm) and (max-width: $md-max) 
+      display: none
+  &-block
+    @include flex-row-center-start
+    /* FROM 320 TO 767 */
+    @media (min-width: $xs-sm) and (max-width: $xs-max) 
+      flex-wrap: wrap
+  &-item
+    flex-basis: 33%
+    text-align: center
+    /* FROM 320 TO 767 */
+    @media (min-width: $xs-sm) and (max-width: $xs-max) 
+      flex-basis: 100%
+      &:not(:last-child)
+        margin-bottom: 25px
+    &__img
+      margin-bottom: 20px
+    &__descr
+      font-size: 16px
+      color: $main-color
+      max-width: 238px
+      margin: 0 auto

@@ -1,0 +1,58 @@
+.main
+  z-index: 10
+  padding-top: 30px
+  padding-bottom: 180px
+  background: url("../../img/main/main-bg.jpg") center center no-repeat
+  background-size: cover
+  /* FROM 320 TO 767 */
+  @media (min-width: $xs-sm) and (max-width: $xs-max) 
+    background: url("../../img/main/main-bg.jpg") left center no-repeat
+    padding-bottom: 60px
+    background-size: cover
+    padding-top: 15px
+  &__button
+    cursor: pointer
+    z-index: 100
+  &-block
+    padding-top: 101px
+    max-width: 521px
+    /* FROM 320 TO 551 */
+    @media (min-width: $xs-sm) and (max-width: $xxs-max)
+      padding-top: 45px
+  &__title
+    margin-bottom: 23px
+    /* FROM 320 TO 551 */
+    @media (min-width: $xs-sm) and (max-width: $xxs-max)
+      font-size: 28px
+  &-list
+    &__item
+      @include flex-row-start-center
+      font-size: 16px
+      font-weight: 400
+      line-height: 130%
+      color: $main-color
+      img
+        margin-right: 9px
+      &:not(:last-child)
+        margin-bottom: 15px
+  &__descr
+    margin-top: 30px
+    margin-bottom: 40px
+    font-size: 16px
+    color: $main-color
+    line-height: 130%
+    max-width: 386px
+    span
+      font-weight: 700
+
+  &-info
+    @include flex-row-start-center
+    margin-top: 40px
+    img
+      margin-right: 8px
+    &__text
+      font-weight: 500
+      color: $main-color
+      a
+        color: #E68E34
+  

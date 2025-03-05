@@ -1,0 +1,47 @@
+.about
+  &__title
+    text-align: left
+  &-block
+    @include flex-row-start-between
+    /* FROM 320 TO 1024 */
+    @media (min-width: $xs-sm) and (max-width: $md-min)
+      @include flex-column-start
+  &-text
+    flex-basis: 50%
+    padding-right: 50px
+    /* FROM 320 TO 1024 */
+    @media (min-width: $xs-sm) and (max-width: $md-min)
+      margin-bottom: 40px
+      padding-right: 0
+  &__descr
+    &:not(:last-child)
+      margin-bottom: 28px
+  &-features
+    @include flex-row-start
+    &-item
+      &:not(:last-child)
+        margin-right: 50px
+        /* FROM 320 TO 1024 */
+        @media (min-width: $xs-sm) and (max-width: $md-min)
+          margin-right: 30px
+      &__title
+        font-family: $main-font
+        color: $main-color
+        font-size: 28px
+        position: relative
+        margin-bottom: 18px
+        &::after
+          content: ""
+          position: absolute
+          top: 100%
+          left: 0%
+          width: 107px
+          height: 3px
+          background: url("../../img/about/after.svg") center center no-repeat
+          background-size: cover
+          margin-top: 7px
+          /* FROM 320 TO 1024 */
+          @media (min-width: $xs-sm) and (max-width: $md-min)
+            width: 70px
+        span
+          font-size: 16px

@@ -1,0 +1,9 @@
+.button
+  @include button
+  transition: all 0.5s
+  &:hover
+    transition: all 0.5s
+    background: linear-gradient(180deg, #CBE668 0%, #B9D350 54.17%, #ADD216 100%)
+  /** 320px - 767px **/
+  @media screen and (min-width: $xs-sm) and (max-width: $xs-max)
+    font-size: 14px

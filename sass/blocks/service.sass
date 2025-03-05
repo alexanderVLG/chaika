@@ -1,0 +1,30 @@
+.service
+  &-block
+    @include flex-row-center-start
+    flex-wrap: wrap
+    &-item
+      @include flex-column-center-start
+      text-align: center
+      flex-basis: 33%
+      margin-bottom: 40px
+      /* FROM 551 TO 767 */
+      @media (min-width: $xs-sm) and (max-width: $xs-max)
+        flex-basis: 48%
+        img
+          max-height: 100px
+      &__img
+        margin: 0 auto 25px
+      &__title
+        margin: 0 auto 2px
+        /* FROM 551 TO 767 */
+        @media (min-width: $xs-sm) and (max-width: $xs-max)
+          font-size: 16px
+      &__price
+        margin: 0 auto
+        font-size: 20px
+        line-height: 130%
+        color: $main-color
+        font-weight: 400
+        /* FROM 551 TO 767 */
+        @media (min-width: $xs-sm) and (max-width: $xs-max)
+          font-size: 16px

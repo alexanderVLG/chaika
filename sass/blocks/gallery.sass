@@ -1,0 +1,48 @@
+.gallery
+  overflow: hidden
+  /* FROM 320 TO 1279 */
+  @media (min-width: $xs-sm) and (max-width: $md-max)
+    overflow: visible
+    margin-bottom: 40px
+  &__title
+    text-align: left
+  &-slider
+    min-width: 1815px
+    position: relative
+    /* FROM 320 TO 1279 */
+    @media (min-width: $xs-sm) and (max-width: $md-max)
+      min-width: auto
+  &-item
+    /* FROM 320 TO 1279 */
+    @media (min-width: $xs-sm) and (max-width: $md-max)
+      padding-right: 15px
+    
+.prev, .next
+  position: absolute
+  top: 100%
+  width: 50px
+  height: 50px
+  margin-top: 25px
+  border-radius: 4px
+  transition: all 0.2s
+  /* FROM 320 TO 1279 */
+  @media (min-width: $xs-sm) and (max-width: $md-max)
+    width: 40px
+    height: 40px
+  
+
+.prev 
+  left: 0%
+  background: #B6CC60 url("../../img/svg/prev-arrow.svg") center center no-repeat
+  &:hover
+    background: darken(#B6CC60, 5%) url("../../img/svg/prev-arrow.svg") center center no-repeat
+
+.next
+  left: 73px
+  background: #B6CC60 url("../../img/svg/next-arrow.svg") center center no-repeat
+  /* FROM 320 TO 1279 */
+  @media (min-width: $xs-sm) and (max-width: $md-max)
+    left: 53px
+  &:hover
+    background: darken(#B6CC60, 5%) url("../../img/svg/next-arrow.svg") center center no-repeat
+

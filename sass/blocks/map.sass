@@ -1,0 +1,56 @@
+.map
+  position: relative
+  min-height: 750px 
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 5
+  &__cloud
+    position: absolute
+    top: -10px
+    left: 0
+    right: 0
+    width: 100%
+    z-index: 100
+  &-block
+    position: relative
+  &-contact
+    padding: 40px
+    border-radius: 12px
+    background: $white-color
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07)
+    z-index: 1000
+    position: absolute
+    top: 200px
+    left: 0
+    /* FROM 320 TO 551 */
+    @media (min-width: $xs-sm) and (max-width: $xxs-max)
+      padding: 30px
+      width: 100%
+    &__title
+      font-family: $main-font
+      font-size: 28px
+      color: $main-color
+      margin-bottom: 20px
+
+  &-item
+    &:not(:last-child)
+      margin-bottom: 20px
+    &__title
+      color: $main-color
+      font-size: 16px
+      font-weight: 700
+      margin-bottom: 4px
+    &__descr
+      font-size: 16px
+      font-weight: 300
+      color: $main-color
+  &-icons
+    margin-top: 15px
+    a
+      &:not(:last-child)
+        margin-right: 10px
+

@@ -1,0 +1,23 @@
+.tour
+  background: url("../img/tour/tour-bg.jpg") center center no-repeat
+  background-size: cover
+  &__title
+    text-align: center
+    max-width: 500px
+    margin: 0 auto 70px auto
+    /* FROM 320 TO 768 */
+    @media (min-width: $xs-sm) and (max-width: $sm-min)
+      margin: 0px auto 30px auto
+  &-video
+    position: relative
+    margin: 0 auto
+    text-align: center
+    iframe
+      max-width: 100%
+  &-img
+    position: absolute
+    top: 0
+    left: 0
+    /* FROM 320 TO 768 */
+    @media (min-width: $xs-sm) and (max-width: $sm-min)
+      display: none

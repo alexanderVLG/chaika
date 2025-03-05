@@ -1,0 +1,38 @@
+.header
+  &-block
+    @include flex-row-between-center
+    /* FROM 320 TO 551 */
+    @media (min-width: $xs-sm) and (max-width: $xxs-max)
+      flex-direction: column
+      justify-content: start
+      align-items: start
+  &__logo
+    /* FROM 320 TO 551 */
+    @media (min-width: $xs-sm) and (max-width: $xxs-max)
+      margin-bottom: 10px
+  &-list
+    @include flex-row-start-center
+    /* FROM 320 TO 767 */
+    @media (min-width: 320px) and (max-width: 767px) 
+      display: none
+    &__item
+      &:not(:last-child)
+        margin-right: 30px
+      a
+        font-size: 16px
+        color: $main-color
+  &-contact
+    @include flex-column-end-start
+    &__phone
+      @include flex-row-start-center
+      font-weight: 700
+      img
+        margin-right: 4px
+      a
+        color: $main-color
+    &__time
+      font-size: 12px
+      font-weight: 500
+      color: $main-color
+
+

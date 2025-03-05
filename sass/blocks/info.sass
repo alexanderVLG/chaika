@@ -1,0 +1,37 @@
+.info
+  background: url("../../img/info/info-bg.jpg") center center no-repeat
+  background-size: cover
+  &-item
+    @include flex-row-center-center
+    &:nth-child(2)
+      /* FROM 320 TO 1024 */
+      @media (min-width: $xs-sm) and (max-width: $md-min)
+        img
+          order: 0
+        div
+          order: 1
+    /* FROM 320 TO 1024 */
+    @media (min-width: $xs-sm) and (max-width: $md-min)
+      flex-direction: column
+      justify-content: start
+      align-items: start 
+    img
+      /* FROM 320 TO 1024 */
+      @media (min-width: $xs-sm) and (max-width: $md-min)
+        margin-bottom: 25px
+      &:first-child
+        margin-right: 120px
+        /* FROM 320 TO 1024 */
+        @media (min-width: $xs-sm) and (max-width: $md-min)
+          margin-right: 0
+    img
+      &:last-child
+        margin-left: 120px
+        /* FROM 320 TO 1024 */
+        @media (min-width: $xs-sm) and (max-width: $md-min)
+          margin-left: 0
+    &-text
+      max-width: 380px
+      &__title
+        margin-bottom: 20px
+        

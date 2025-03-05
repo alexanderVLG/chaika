@@ -1,0 +1,80 @@
+.question
+  background: url("../../img/question/question-bg.jpg") left -100px center no-repeat
+  background-size: cover
+  min-height: 600px
+  &__title
+    text-align: left
+  &-block
+    @include flex-row-start-between
+    /* FROM 320 TO 1024 */
+    @media (min-width: $xs-sm) and (max-width: $md-min)
+      flex-direction: column
+  &-text
+    flex-basis: 42%
+    padding-right: 49px
+    /* FROM 320 TO 1024 */
+    @media (min-width: $xs-sm) and (max-width: $md-min)
+      padding-right: 0
+      flex-basis: 100%
+      margin-bottom: 25px
+  &__title
+    max-width: 464px
+    margin-bottom: 30px
+  &__descr
+    font-size: 18px
+    max-width: 315px
+    color: $main-color
+    margin-bottom: 45px
+    line-height: 130%
+
+  &-content
+    flex: 1
+    /* FROM 320 TO 1024 */
+    @media (min-width: $xs-sm) and (max-width: $md-min)
+      flex-basis: 100%
+      min-width: 100%
+  
+  &-item
+    padding: 20px 24px
+    border-radius: 8px
+    background: $white-color
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07)
+    width: 100%
+    cursor: pointer
+    transition: all 0.1s
+    &--active
+      transition: all 0.1s
+      .question-item-body
+        height: 100%
+        overflow: visible
+        margin-top: 20px
+      .question-item__arrow
+        transform: rotate(180deg)
+      .question-item-header
+        p
+          color: #7F934C
+    &:not(:last-child)
+      margin-bottom: 25px
+    &-header
+      @include flex-row-between-center
+      p
+        font-size: 18px
+        color: $main-color
+        transition: all 0.1s
+        /* FROM 320 TO 1024 */
+        @media (min-width: $xs-sm) and (max-width: $md-min)
+          font-size: 16px
+          margin-right: 20px
+    &-body
+      height: 0
+      overflow: hidden
+      transition: all 0.1s
+      p
+        font-weight: 300
+        line-height: 130%
+        max-width: 500px
+        /* FROM 320 TO 1024 */
+        @media (min-width: $xs-sm) and (max-width: $md-min)
+          font-size: 14px
+    &__arrow
+      transition: all 0.1s

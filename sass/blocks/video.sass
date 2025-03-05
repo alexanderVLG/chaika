@@ -1,0 +1,25 @@
+.video
+  overflow: hidden
+  /* FROM 320 TO 1279 */
+  @media (min-width: $xs-sm) and (max-width: $md-max)
+    overflow: visible
+    margin-bottom: 40px
+  &__title
+    text-align: left
+  &-slider
+    @include flex-row-start
+    min-width: 1815px
+    width: 100%
+    /* FROM 320 TO 1279 */
+    @media (min-width: $xs-sm) and (max-width: $md-max)
+      min-width: auto
+    &-item
+      flex-basis: 45%
+      width: 45%
+      iframe
+        width: 100%
+        min-height: 300px
+        padding-right: 30px
+        /* FROM 320 TO 1279 */
+        @media (min-width: $xs-sm) and (max-width: $md-max)
+          min-height: auto

@@ -1,0 +1,105 @@
+// MIXIN FOR LAYOUT
+@mixin flex-row-start
+  display: flex
+  justify-content: start
+  align-items: start
+
+@mixin flex-row-center-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin flex-row-between-center
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+@mixin flex-row-center-start
+  display: flex
+  justify-content: center
+  align-items: start
+
+@mixin flex-row-start-between
+  display: flex
+  justify-content: space-between
+  align-items: start
+
+@mixin flex-row-start-center
+  display: flex
+  justify-content: start
+  align-items: center
+
+@mixin flex-column-start
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: start
+
+@mixin flex-column-center-start
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: start
+
+@mixin flex-column-center-center  
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+@mixin flex-column-end-start
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  align-items: flex-end
+
+// MIXIN FOR HEADINGS
+@mixin title
+  color: $main-color
+  font-family: $main-font
+  font-size: 44px
+  line-height: 120%
+
+@mixin main-title
+  color: $main-color
+  font-family: $main-font
+  font-size: 36px
+  line-height: 130%
+
+@mixin second-title
+  color: $main-color
+  font-family: $main-font
+  font-size: 24px
+  line-height: 130%
+
+// MIXIN FOR TEXTS
+@mixin text-body
+  font-family: $secondary-font
+  color: $grey-color
+  font-size: 16px
+  line-height: 130%
+  font-weight: 400
+
+// MIXIN FOR BUTTONS
+@mixin button
+  background: $green-gradient-color
+  color: $white-color
+  font-weight: 500
+  font-size: 16px
+  border-radius: 4px
+  padding: 17px 40px
+  font-family: $secondary-font
+  text-align: center
+  
+
+// MIXIN FOR INPUTS
+@mixin input
+  background: $white-color
+  border-radius: 4px
+  box-shadow: $input-shadow
+  padding: 17px 20px
+  font-size: 16px
+  font-weight: 400
+  color: $input-color
+  &::placeholder
+    color: $input-color

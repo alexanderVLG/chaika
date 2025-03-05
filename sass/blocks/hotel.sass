@@ -1,0 +1,112 @@
+.hotel
+  padding-top: 280px
+  padding-bottom: 300px
+  margin-bottom: 90px
+  background: url("../../img/hotel/hotel-bg.jpg") center center no-repeat
+  background-size: cover
+  /* FROM 320 TO 1024 */
+  @media (min-width: $xs-sm) and (max-width: $md-min)
+    padding-top: 20px
+    padding-bottom: 0px
+  &__title
+    text-align: left
+    margin-bottom: 55px
+    /* FROM 320 TO 1024 */
+    @media (min-width: $xs-sm) and (max-width: $md-min)
+      text-align: center
+      margin-bottom: 35px
+  &-item
+    padding: 25px
+    background: $white-color
+    border-radius: 12px
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05)
+    @include flex-row-start-center
+    /* FROM 320 TO 1024 */
+    @media (min-width: $xs-sm) and (max-width: $md-min)
+      flex-direction: column
+      justify-content: start
+      align-items: start
+    &:not(:last-child)
+      margin-bottom: 30px
+    &-gallery
+      width: 35%
+      padding-right: 45px
+      /* FROM 320 TO 1024 */
+      @media (min-width: $xs-sm) and (max-width: $md-min)
+        width: 100%
+        padding-right: 0
+        flex-basis: fill
+        margin-bottom: 20px
+    &-content
+      @include flex-row-start-center
+      width: 65%
+      /* FROM 320 TO 1024 */
+      @media (min-width: $xs-sm) and (max-width: $md-min)
+        flex-direction: column
+        justify-content: start
+        align-items: start
+        width: 100%
+      &-text
+        padding-right: 50px
+        /* FROM 320 TO 1024 */
+        @media (min-width: $xs-sm) and (max-width: $md-min)
+          padding-right: 0px
+      &__title
+        margin-bottom: 4px
+      &__descr
+        max-width: 475px
+        font-size: 16px
+        font-weight: 400
+        line-height: 130%
+        color: $main-color
+        margin-bottom: 35px
+        /* FROM 320 TO 1024 */
+        @media (min-width: $xs-sm) and (max-width: $md-min)
+          max-width: none
+          margin-bottom: 20px
+      &-price
+        @include flex-column-center-center  
+        /* FROM 320 TO 1024 */
+        @media (min-width: $xs-sm) and (max-width: $md-min)
+          flex-direction: row
+          margin-top: 15px
+        /* FROM 320 TO 551 */
+        @media (min-width: $xs-sm) and (max-width: $xxs-max)
+          flex-direction: column
+          justify-content: start
+          align-items: start 
+        &__title
+          @include flex-column-center-center  
+          text-align: center
+          margin-bottom: 5px
+          font-size: 18px
+          font-weight: 700
+          color: $main-color
+          /* FROM 320 TO 1024 */
+          @media (min-width: $xs-sm) and (max-width: $md-min)
+            text-align: left
+            margin-right: 15px
+        &__subtitle
+          font-size: 16px
+          font-weight: 400
+          color: $grey-color
+          margin-bottom: 10px
+          /* FROM 320 TO 1024 */
+          @media (min-width: $xs-sm) and (max-width: $md-min)
+              margin-bottom: 0
+              margin-right: 15px
+          /* FROM 320 TO 551 */
+          @media (min-width: $xs-sm) and (max-width: $xxs-max)
+            margin-bottom: 15px
+      &__icons
+        @include flex-row-start-center
+        img
+          &:not(:last-child)
+            margin-right: 17px
+
+.fotorama__wrap
+  /* FROM 320 TO 1024 */
+  @media (min-width: $xs-sm) and (max-width: $md-min)
+    margin-right: 0 !important
+    width: 100% !important
+    min-width: 100% !important
