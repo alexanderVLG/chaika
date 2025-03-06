@@ -1891,3 +1891,11 @@ padding-bottom:100px;}
   .gallery-elements .slick-slide {margin-right: 20px;}
 
 }
+/* verstace start */
+.main__gallery .hotel-item-gallery {
+	width: 100%;
+	max-width: 920px;
+	padding: 0;
+	margin: 0 auto;
+}
+/* verstace end */
