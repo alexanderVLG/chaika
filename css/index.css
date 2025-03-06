@@ -1198,15 +1198,17 @@ gap:14px;}
 .main {
   z-index: 10;
   padding-bottom: 180px;
-  background: url("../img/main/hero-background.jpg") center center no-repeat;
+  background: url("../img/main/hero-background.jpg") center center;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
   background-size: cover;
   /* FROM 320 TO 767 */
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .main {
-    background: url("../img/main/hero-background.jpg") left center no-repeat;
+    background: url("../img/main/hero-background-mobile.jpg") top center;
     padding-bottom: 60px;
-    background-size: cover;
+	background-repeat: no-repeat;
   }
 }
 .main__button {
