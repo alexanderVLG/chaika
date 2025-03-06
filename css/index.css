@@ -41,6 +41,16 @@ position: absolute;
   .contact__list li{color:#fff;
   }
 
+  .header {
+	padding: 15px 0;
+	background-color: rgba(255, 255, 255, 0.7);
+  }
+  @media (min-width: 1025px) {
+	.header {
+		padding: 30px 0;
+	}
+  }
+
 .section {
   padding: 90px 0px 110px;
   /** 320px - 767px **/
@@ -1187,7 +1197,6 @@ gap:14px;}
 
 .main {
   z-index: 10;
-  padding-top: 30px;
   padding-bottom: 180px;
   background: url("../img/main/hero-background.jpg") center center no-repeat;
   background-size: cover;
@@ -1198,7 +1207,6 @@ gap:14px;}
     background: url("../img/main/hero-background.jpg") left center no-repeat;
     padding-bottom: 60px;
     background-size: cover;
-    padding-top: 15px;
   }
 }
 .main__button {
