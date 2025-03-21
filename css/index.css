@@ -944,6 +944,7 @@ gap:14px;}
 	height: 48px;
 	width: 48px;
 	background-color: #B9D350;
+	cursor: pointer;
 }
 
 .social__link-icon--whatsapp {
@@ -965,6 +966,10 @@ gap:14px;}
 
   .social__link-text {
 	color: #ffffff;
+  }
+
+  .social__link {
+	cursor: pointer;
   }
 
   .social__link:hover {
