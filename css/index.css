@@ -16,6 +16,17 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+  }
+
 .dog{
 position: absolute;
     color: #fff;
@@ -918,6 +929,55 @@ gap:14px;}
   font-weight: 400;
   color: #ffffff;
 }
+
+.footer__contact-list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 160px;
+}
+
+.social__link-icon {
+	display: block;
+	margin-bottom: 15px;
+	height: 48px;
+	width: 48px;
+	background-color: #B9D350;
+}
+
+.social__link-icon--whatsapp {
+	mask-image: url('../img/svg/whatsapp.svg');
+}
+
+.social__link-icon--whatsapp:hover {
+	background-color: #ffffff;
+}
+
+.social__link-icon--whatsapp:focus-visible {
+    background-color: #ffffff;
+  }
+
+.social__link-icon--whatsapp:active {
+    background-color: #ffffff;
+    opacity: 0.3;
+  }
+
+  .social__link-text {
+	color: #ffffff;
+  }
+
+  .social__link:hover {
+	color: #B9D350;
+  }
+
+.social__link:focus-visible {
+    color: #B9D350;
+  }
+
+  .social__link:active {
+    color: #B9D350;
+    opacity: 0.3;
+  }
 
 .map {
   position: relative;
